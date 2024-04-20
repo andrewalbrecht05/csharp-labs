@@ -1,0 +1,55 @@
+﻿@model Lab3.Models.Triplet
+
+@{
+    ViewData["Title"] = "Завдання 1";
+}
+<br/>
+<h4>
+    Прізвища та назви груп студентів, які мають оцінку *x* із заданого предмета.
+</h4>
+<br/>
+<div style="display: flex">
+    <div style="width: 55%; margin-right: 50px">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Прізвище</th>
+                <th>Група</th>
+                <th>Оцінка</th>
+                <th/>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model.Pairs!)
+            {
+            <tr>
+                <td>
+                    Name
+                </td>
+                <td>
+                    Group
+                </td>
+                <td>
+                    Mark
+                </td>
+                <td/>
+            </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+    <div style="width: 45%; padding-left: 30px; padding-top: 20px;  padding-right: 100px">
+        <form asp-action="Index">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MarkString" class="control-label">Вибрати оцінку&nbsp; </label>
+                <select asp-for="MarkString" asp-items="Model.Marks"></select>
+                <span asp-validation-for="MarkString" class="text-danger"></span>
+            </div>
+            <br/>
+            <div class="form-group">
+                <input type="submit" value=" Оновити " class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>

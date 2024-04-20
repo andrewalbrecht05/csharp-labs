@@ -1,0 +1,94 @@
+Started at 16.04.2024 21:45:14:
+    21:49:50: ./AppData\users.txt load started
+    ./AppData\users.txt: inconsistent data in line #1
+    21:49:50: ./AppData\users.txt load finished
+    21:49:50: 0 users loaded
+    21:49:50: andy is saved in ./AppData\users.txt
+    21:49:50: "andy" is registered
+    21:50:15: andy left
+Started at 16.04.2024 21:52:54:
+Started at 16.04.2024 21:54:12:
+Started at 16.04.2024 21:55:38:
+    21:56:47: ./AppData\users.txt load started
+    ./AppData\users.txt: inconsistent data in line #1
+    ./AppData\users.txt: inconsistent data in line #2
+    21:56:47: ./AppData\users.txt load finished
+    21:56:47: 1 users loaded
+    21:56:47: andy successfully authorized
+    21:57:31: andy left
+Started at 16.04.2024 21:58:16:
+    21:58:25: ./AppData\users.txt load started
+    ./AppData\users.txt: inconsistent data in line #1
+    ./AppData\users.txt: inconsistent data in line #2
+    21:58:25: ./AppData\users.txt load finished
+    21:58:25: 1 users loaded
+Started at 16.04.2024 22:01:36:
+    22:01:58: ./AppData\users.txt load started
+    22:01:58: ./AppData\users.txt load finished
+    22:01:58: 1 users loaded
+    22:01:58: andy successfully authorized
+    22:02:05: andy left
+    22:04:14: andy successfully authorized
+    22:04:17: ./AppData\Students.csv load started
+    22:04:17: ./AppData\Students.csv load finished
+    22:19:42: andy left
+Started at 16.04.2024 22:27:02:
+    22:27:10: ./AppData\users.txt load started
+    22:27:10: ./AppData\users.txt load finished
+    22:27:10: 1 users loaded
+    22:27:10: andy successfully authorized
+    22:27:12: ./AppData\Students.csv load started
+    22:27:12: ./AppData\Students.csv load finished
+Started at 16.04.2024 23:11:07:
+    23:11:30: ./AppData\users.txt load started
+    23:11:30: ./AppData\users.txt load finished
+    23:11:30: 1 users loaded
+    23:11:30: andy successfully authorized
+    23:11:34: ./AppData\Students.csv load started
+    23:11:34: ./AppData\Students.csv load finished
+Started at 16.04.2024 23:17:29:
+    23:17:44: ./AppData\users.txt load started
+    23:17:44: ./AppData\users.txt load finished
+    23:17:44: 1 users loaded
+    23:17:44: andy successfully authorized
+    23:17:47: ./AppData\Ratings.csv load started
+    ./AppData\Ratings.csv: exception Could not find file 'C:\Users\andri\RiderProjects\Lab3\AppData\Ratings.csv'.
+    23:17:47: ./AppData\Ratings.csv load finished
+Started at 17.04.2024 17:55:19:
+    17:55:29: ./AppData\users.txt load started
+    17:55:29: ./AppData\users.txt load finished
+    17:55:29: 1 users loaded
+    17:55:29: andy successfully authorized
+    17:55:32: ./AppData\Students.csv load started
+    17:55:32: ./AppData\Students.csv load finished
+    17:55:33: ./AppData\Ratings.csv load started
+    ./AppData\Ratings.csv: exception Could not find file 'C:\Users\andri\RiderProjects\Lab3\AppData\Ratings.csv'.
+    17:55:33: ./AppData\Ratings.csv load finished
+Started at 17.04.2024 18:18:40:
+    18:18:47: ./AppData\users.txt load started
+    18:18:47: ./AppData\users.txt load finished
+    18:18:47: 1 users loaded
+    18:18:47: andy successfully authorized
+    18:18:49: ./AppData\Ratings.csv load started
+    18:18:49: ./AppData\Ratings.csv load finished
+    18:19:33: ./AppData\Students.csv load started
+    18:19:33: ./AppData\Students.csv load finished
+Started at 17.04.2024 18:49:43:
+    18:49:53: ./AppData\users.txt load started
+    18:49:53: ./AppData\users.txt load finished
+    18:49:53: 1 users loaded
+    18:49:53: andy successfully authorized
+    18:49:58: ./AppData\Students.csv load started
+    18:49:58: ./AppData\Students.csv load finished
+    18:50:04: ./AppData\Ratings.csv load started
+    18:50:04: ./AppData\Ratings.csv load finished
+Started at 17.04.2024 19:21:11:
+    19:21:59: ./AppData\users.txt load started
+    19:21:59: ./AppData\users.txt load finished
+    19:21:59: 1 users loaded
+    19:21:59: andy successfully authorized
+Started at 17.04.2024 19:34:18:
+    19:35:39: ./AppData\users.txt load started
+    19:35:39: ./AppData\users.txt load finished
+    19:35:39: 1 users loaded
+    19:35:39: andy successfully authorized

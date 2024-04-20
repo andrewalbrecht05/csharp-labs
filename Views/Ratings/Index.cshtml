@@ -1,0 +1,32 @@
+﻿@model IEnumerable<Lab3.Models.Rating>
+
+@{
+    ViewBag.Title = "Лікарі";
+    Layout = "_Layout";
+}
+
+<h2>Таблиця балів студентів</h2>
+<table class="table">
+    <thead class="bg-success bg-opacity-10">
+    <tr>
+        <td>Код</td>
+        <td>Прізвище</td>
+        <td>К-ть балів за перший модуль</td>
+        <td>К-ть балів за другий модуль</td>
+    </tr>
+    </thead>
+    <tbody>
+    @{
+        var rowCounter = 0;
+        foreach (var doctor in Model)
+        {
+            <tr class="@(rowCounter++ % 2 == 1 ? "bg-warning bg-opacity-10": "")">
+                <td>@doctor.Id</td>
+                <td>@doctor.Name</td>
+                <td>@doctor.pointsFirstModule</td>
+                <td>@doctor.pointsSecondModule</td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>
