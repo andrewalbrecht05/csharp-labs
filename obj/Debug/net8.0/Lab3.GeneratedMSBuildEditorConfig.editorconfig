@@ -9,63 +9,59 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Lab3
 build_property.RootNamespace = Lab3
-build_property.ProjectDir = C:\Users\andri\RiderProjects\Lab3\
+build_property.ProjectDir = /home/andrew055/RiderProjects/csharp-labs/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\andri\RiderProjects\Lab3
+build_property.MSBuildProjectDirectory = /home/andrew055/RiderProjects/csharp-labs
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/andri/RiderProjects/Lab3/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/home/andrew055/RiderProjects/csharp-labs/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andri/RiderProjects/Lab3/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[/home/andrew055/RiderProjects/csharp-labs/Views/Ratings/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUmF0aW5ncy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andri/RiderProjects/Lab3/Views/Ratings/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmF0aW5nc1xJbmRleC5jc2h0bWw=
+[/home/andrew055/RiderProjects/csharp-labs/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andri/RiderProjects/Lab3/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/home/andrew055/RiderProjects/csharp-labs/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andri/RiderProjects/Lab3/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/home/andrew055/RiderProjects/csharp-labs/Views/Signin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2lnbmluL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andri/RiderProjects/Lab3/Views/Signin/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnbmluXEluZGV4LmNzaHRtbA==
+[/home/andrew055/RiderProjects/csharp-labs/Views/Signup/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2lnbnVwL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andri/RiderProjects/Lab3/Views/Signup/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnbnVwXEluZGV4LmNzaHRtbA==
+[/home/andrew055/RiderProjects/csharp-labs/Views/Students/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3R1ZGVudHMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andri/RiderProjects/Lab3/Views/Students/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudHNcSW5kZXguY3NodG1s
+[/home/andrew055/RiderProjects/csharp-labs/Views/Task1/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFzazEvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andri/RiderProjects/Lab3/Views/Task1/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFzazFcSW5kZXguY3NodG1s
+[/home/andrew055/RiderProjects/csharp-labs/Views/Task2/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVGFzazIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andri/RiderProjects/Lab3/Views/Task2/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFzazJcSW5kZXguY3NodG1s
+[/home/andrew055/RiderProjects/csharp-labs/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andri/RiderProjects/Lab3/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/home/andrew055/RiderProjects/csharp-labs/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/andri/RiderProjects/Lab3/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/andri/RiderProjects/Lab3/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-llc010hsp9
+[/home/andrew055/RiderProjects/csharp-labs/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-m0r0285und

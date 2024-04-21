@@ -1,1 +1,30 @@
-﻿
+﻿@model Lab3.Models.Task2ViewModel
+@{
+    ViewData["Title"] = "Завдання 2";
+}
+<br/>
+<h4>
+    Прізвища студентів, які мають найбільший середній рейтинг за перший модуль <b>(@(Model.MaxRating))</b>.
+</h4>
+<br/>
+<div style="display: flex">
+    <div style="width: 55%; margin-right: 50px">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Прізвище студента</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var studentName in Model.StudentNames)
+            {
+                <tr>
+                    <td>
+                        @studentName
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>

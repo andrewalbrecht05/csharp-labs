@@ -16,15 +16,7 @@ public static class DataProvider
 
     public static List<Student> Students
     {
-        get
-        {
-            if (_students is null)
-            {
-                _students = ReadFromFile<Student>(_studentsFileName);
-            }
-
-            return _students;
-        }
+        get { return _students ??= ReadFromFile<Student>(_studentsFileName); }
     }
 
     public static Dictionary<int, Student> StudentsDict => _studentsDict ??= Students.ToDictionary(d => d.Id, d => d);

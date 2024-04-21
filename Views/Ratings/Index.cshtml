@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<Lab3.Models.Rating>
 
 @{
-    ViewBag.Title = "Лікарі";
+    ViewBag.Title = "Рейтинг";
     Layout = "_Layout";
 }
 
 <h2>Таблиця балів студентів</h2>
 <table class="table">
-    <thead class="bg-success bg-opacity-10">
+    <thead class="bg-dark text-white bg-opacity-90">
     <tr>
         <td>Код</td>
         <td>Прізвище</td>
@@ -17,10 +17,17 @@
     </thead>
     <tbody>
     @{
-        var rowCounter = 0;
+        
         foreach (var doctor in Model)
         {
-            <tr class="@(rowCounter++ % 2 == 1 ? "bg-warning bg-opacity-10": "")">
+            var averageMark = (doctor.pointsFirstModule + doctor.pointsSecondModule) / 2;
+            var style = averageMark switch
+            {
+                <= 0 => "bg-danger bg-opacity-10",
+                < 35 => "bg-warning bg-opacity-10",
+                _ => "bg-success bg-opacity-10"
+            };
+            <tr class="@(style)">
                 <td>@doctor.Id</td>
                 <td>@doctor.Name</td>
                 <td>@doctor.pointsFirstModule</td>

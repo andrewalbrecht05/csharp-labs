@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<Lab3.Models.Student>
 
 @{
-    ViewBag.Title = "Пацієнти";
+    ViewBag.Title = "Студенти";
     Layout = "_Layout";
 }
 
 <h2>Інформація про студентів</h2>
 <table class="table table-striped">
-    <thead class="bg-success bg-opacity-10">
+    <thead class="bg-dark text-white bg-opacity-90">
     <tr>
         <td>Код</td>
         <td>Прізвище</td>
@@ -19,7 +19,7 @@
          var rowCounter = 0;
          foreach (var student in Model)
          {
-             <tr class="@(rowCounter++ % 2 == 1 ? "bg-warning bg-opacity-10": "")">
+             <tr class="@(rowCounter++ % 2 == 1 ? "bg-success bg-opacity-10": "")">
                  <td>@student.Id</td>
                  <td>@student.Name</td>
                  <td>@student.Group</td>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MemZVyFUSKoMwY4n00RBGW5l933Ap7jQ1YZ+d4E+WpsQWqNCOO596ck9UYUQMLi1vnEQGSeMGCw4kDm0wMdgIQ==",
+  "dgSpecHash": "K9XFsYZ/0Bw3/V3der22AxIU+yMXFMcRPaI4I3oYMrVtxAxtsiI1YVa37UB9hlY1vArZwFXcun3G2+1zvYfnrQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andri\\RiderProjects\\Lab3\\Lab3.csproj",
+  "projectFilePath": "/home/andrew055/RiderProjects/csharp-labs/Lab3.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
