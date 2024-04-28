@@ -7,19 +7,20 @@ namespace Lab3.Controllers;
 
 public class Task1Controller : Controller
 {
-    private List<SelectListItem>? _availableMarks;
+    private List<SelectListItem>? _availableSubjects;
 
-    private void GetMarks()
+    private void GetSubjects()
     {
-        if (_availableMarks is not null) return;
-        var allMarks = new SortedSet<int>();
-        foreach (var ratingField in Ratings)
-            allMarks.Add(GetMark(ratingField.pointsFirstModule, ratingField.pointsSecondModule));
+        if (_availableSubjects is not null) return;
 
-        _availableMarks = new List<SelectListItem> { new() { Text = "Усі оцінки", Value = "Усі оцінки" } };
-        
-        foreach (var mark in allMarks)
-            _availableMarks.Add(new SelectListItem(mark.ToString(), mark.ToString()));
+        var allSubjects = new SortedSet<string>();
+        foreach (var ratingField in Ratings)
+            allSubjects.Add(ratingField.SubjectName);
+
+        _availableSubjects = new List<SelectListItem> { new() { Text = "Усі предмети", Value = "Усі предмети" } };
+
+        foreach (var subject in allSubjects)
+            _availableSubjects.Add(new SelectListItem(subject, subject));
     }
 
     private static int GetMark(int firstMark, int secondMark)
@@ -36,26 +37,35 @@ public class Task1Controller : Controller
     }
 
 
-    public IActionResult Index(int? mark)
+    public IActionResult Index(string? selectedSubject)
     {
-        GetMarks();
+        GetSubjects();
         var tuple = new List<(string name, string? group, int? mark)>();
         var sortedStudents = new List<Student>(Students);
         sortedStudents.Sort((student1, student2) => String.Compare(student1.Name, student2.Name));
 
         foreach (var student in sortedStudents)
         {
-            var rating = RatingsDict.GetValueOrDefault(student.Id)!;
-            var aveMark = (rating.pointsFirstModule + rating.pointsSecondModule) / 2;
+            var rating = RatingsDict.GetValueOrDefault((student.Id, selectedSubject));
+            //var aveMark = (rating.PointsFirstModule + rating.PointsSecondModule) / 2;
+            if (selectedSubject is null)
+            {
+                foreach (var VARIABLE in Rat)
+                {
+                    
+                }
+            }
 
-            if (mark is null || GetMark(rating.pointsFirstModule, rating.pointsSecondModule) == mark)
-                tuple.Add((student.Name, student.Group, aveMark));
+            if (selectedSubject is null || (GetMark(rating.PointsFirstModule, rating.PointsSecondModule) == 4 &&
+                                            rating.SubjectName == selectedSubject))
+                tuple.Add((student.Name, student.Group, rating.PointsFirstModule));
         }
 
         var viewModel = new Task1ViewModel
-            { Tuple = tuple, Marks = _availableMarks, MarkString = mark?.ToString() ?? "Усі оцінки" };
+            { Tuple = tuple, Subjects = _availableSubjects, SubjectString = selectedSubject ?? "Усі предмети" };
         return View(viewModel);
     }
+
 
     [HttpPost]
     public IActionResult Index(Task1ViewModel task1ViewModel)
@@ -65,7 +75,6 @@ public class Task1Controller : Controller
             RedirectToAction("Index");
         }
 
-        int? mark = int.TryParse(task1ViewModel.MarkString, out var markValue) ? markValue : null;
-        return Index(mark);
+        return Index(task1ViewModel.SubjectString);
     }
 }

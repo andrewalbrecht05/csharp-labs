@@ -5,7 +5,7 @@
 }
 <br/>
 <h4>
-    Прізвища та назви груп студентів з оцінками <b>@(Model.MarkString == "Усі оцінки" ? "" : $"{Model.MarkString}")</b> із заданого предмета.
+    Прізвища та назви груп студентів які мають оцінку 4 з <b>@(Model.SubjectString == "Усі предмети" ? "кожного предмету" : $"предмету \"{Model.SubjectString}\"")</b>
 </h4>
 <br/>
 <div style="display: flex">
@@ -30,7 +30,7 @@
                     @Html.DisplayFor(modelItem => item.Group)
                 </td>
                 <td>
-                    @(item.Mark?.ToString() ?? "0")
+                    @(item.mark?.ToString() ?? "Немає даних")
                 </td>
                 <td/>
             </tr>
@@ -42,9 +42,9 @@
         <form asp-action="Index">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="MarkString" class="control-label">Вибрати оцінку:&nbsp; </label>
-                <select asp-for="MarkString" asp-items="Model.Marks"></select>
-                <span asp-validation-for="MarkString" class="text-danger"></span>
+                <label asp-for="SubjectString" class="control-label">Вибрати предмет:&nbsp; </label>
+                <select asp-for="SubjectString" asp-items="Model.Subjects"></select>
+                <span asp-validation-for="SubjectString" class="text-danger"></span>
             </div>
             <br/>
             <div class="form-group">

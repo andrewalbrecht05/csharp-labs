@@ -8,7 +8,7 @@ public static class DataProvider
     private static List<Rating>? _ratings;
     
     private static Dictionary<int, Student>? _studentsDict;
-    private static Dictionary<int, Rating>? _ratingsDict;
+    private static Dictionary<(int,string), Rating>? _ratingsDict;
 
     public const string DefaultDir = "./AppData";
     private static string _studentsFileName = "Students.csv";
@@ -23,7 +23,7 @@ public static class DataProvider
 
     public static List<Rating> Ratings => _ratings ??= ReadFromFile<Rating>(_ratingsFileName);
 
-    public static Dictionary<int, Rating> RatingsDict => _ratingsDict ??= Ratings.ToDictionary(p => p.Id, p => p);
+    public static Dictionary<(int,string), Rating> RatingsDict => _ratingsDict ??= Ratings.ToDictionary(p => (p.Id,p.SubjectName), p => p);
 
     public static List<T> ReadFromFile<T>(string fileName, string separator = ";") where T : IParseable<T>
     {
